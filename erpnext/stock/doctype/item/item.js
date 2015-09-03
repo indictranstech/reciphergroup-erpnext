@@ -59,6 +59,10 @@ frappe.ui.form.on("Item", {
 		erpnext.item.toggle_reqd(frm);
 
 		erpnext.item.toggle_attributes(frm);
+
+		if (frm.is_new() && frm.doc.is_stock_item) {
+			frm.fields_dict.inventory.collapse(false);
+		}
 	},
 
 	validate: function(frm){
@@ -91,6 +95,7 @@ frappe.ui.form.on("Item", {
 	},
 
 	is_stock_item: function(frm) {
+		frm.is_new() && frm.fields_dict.inventory.collapse(!frm.doc.is_stock_item);
 		erpnext.item.toggle_reqd(frm);
 	},
 
@@ -226,7 +231,7 @@ $.extend(erpnext.item, {
 			args = d.get_values();
 			if(!args) return;
 			frappe.call({
-				method:"erpnext.stock.doctype.item.item.get_variant",
+				method:"erpnext.controllers.item_variant.get_variant",
 				args: {
 					"item": cur_frm.doc.name,
 					"args": d.get_values()
@@ -248,7 +253,7 @@ $.extend(erpnext.item, {
 					} else {
 						d.hide();
 						frappe.call({
-							method:"erpnext.stock.doctype.item.item.create_variant",
+							method:"erpnext.controllers.item_variant.create_variant",
 							args: {
 								"item": cur_frm.doc.name,
 								"args": d.get_values()
