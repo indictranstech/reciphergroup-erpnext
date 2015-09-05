@@ -187,7 +187,7 @@ $.extend(erpnext.wiz, {
 	welcome: {
 		slide: {
 			name: "welcome",
-			title: __("Welcome to RECIPHERGroup"),
+			title: __("Welcome to RECiPHER BiS"),
 			icon: "icon-world",
 			help: __("Let's prepare the system for first use."),
 

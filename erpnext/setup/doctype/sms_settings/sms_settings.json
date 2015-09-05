@@ -8,9 +8,9 @@
  "doctype": "DocType", 
  "fields": [
   {
-   "allow_on_submit": 0,
+   "allow_on_submit": 0, 
    "bold": 0, 
-   "collapsible": 0,
+   "collapsible": 0, 
    "fieldname": "column_break0", 
    "fieldtype": "Column Break", 
    "hidden": 0, 
@@ -29,9 +29,9 @@
    "width": "50%"
   }, 
   {
-   "allow_on_submit": 0,
+   "allow_on_submit": 0, 
    "bold": 0, 
-   "collapsible": 0,
+   "collapsible": 0, 
    "description": "Eg. smsgateway.com/api/send_sms.cgi", 
    "fieldname": "sms_gateway_url", 
    "fieldtype": "Data", 
@@ -51,9 +51,9 @@
    "unique": 0
   }, 
   {
-   "allow_on_submit": 0,
+   "allow_on_submit": 0, 
    "bold": 0, 
-   "collapsible": 0,
+   "collapsible": 0, 
    "description": "Enter url parameter for message", 
    "fieldname": "message_parameter", 
    "fieldtype": "Data", 
@@ -141,7 +141,7 @@
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
-   "description": "Enter static url parameters here (Eg. sender=RECIPHERGroup, username=RECIPHERGroup, password=1234 etc.)",
+   "description": "Enter static url parameters here (Eg. sender=RECiPHER BiS, username=RECiPHER BiS, password=1234 etc.)", 
    "fieldname": "parameters", 
    "fieldtype": "Table", 
    "hidden": 0, 
@@ -170,7 +170,7 @@
  "is_submittable": 0, 
  "issingle": 1, 
  "istable": 0, 
- "modified": "2015-05-25 17:46:37.555503", 
+ "modified": "2015-09-03 14:31:52.845343", 
  "modified_by": "Administrator", 
  "module": "Setup", 
  "name": "SMS Settings", 

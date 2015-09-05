@@ -12,7 +12,7 @@ $(document).bind('toolbar_setup', function() {
 
 
 	$('.navbar-home').html('<img class="erpnext-icon" src="'+
-			frappe.urllib.get_base_url()+'/assets/erpnext/images/reciphergroup_icon.png" />');
+			frappe.urllib.get_base_url()+'/assets/erpnext/images/reciphergroup_icon.ico" />');
 
 	$('[data-link="docs"]').attr("href", "https://manual.erpnext.com")
 });

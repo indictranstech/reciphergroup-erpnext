@@ -84,12 +84,12 @@ def make_issue():
 def make_projects():
 	project = frappe.get_doc({
 		"doctype": "Project",
-		"project_name": "RECIPHERGroup Implementation",
+		"project_name": "RECiPHER BiS Implementation",
 	})
 	current_date = frappe.utils.nowdate()
 	project.set("tasks", [
 			{
-				"title": "Explore RECIPHERGroup",
+				"title": "Explore RECiPHER BiS",
 				"start_date": frappe.utils.add_days(current_date, 1),
 				"end_date": frappe.utils.add_days(current_date, 2)
 			},
